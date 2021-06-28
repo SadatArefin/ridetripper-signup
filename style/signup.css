@@ -1,0 +1,32 @@
+body{
+background-color: rgb(214, 183, 137);
+}
+.login-view{
+    background-color: rgb(180, 224, 224);
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.login-text{
+    font-size:8em;
+    width: 40%;
+}
+.user{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+
+.user-type{
+    padding: 50px;
+    margin: 10px;
+    background-color: rgb(105, 0, 204);
+    font-size: 3em;
+    border-radius: 10%;
+    margin: 3%;
+}
+a:hover, a:visited, a:default, a{
+    text-decoration: none;
+    color: tomato;
+}
