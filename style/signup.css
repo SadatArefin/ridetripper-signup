@@ -1,15 +1,29 @@
-body{
-background-color: rgb(214, 183, 137);
+body{ 
+    background: rgb(123,162,167);
+    background: radial-gradient(circle, rgba(123,162,167,1) 0%, rgba(167,187,199,1) 50%, rgba(175,176,228,0.9570028695071778) 100%); 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 0;
 }
 .login-view{
-    background-color: rgb(180, 224, 224);
     width: 100%;
     height: auto;
+    max-height:700px;
+    position: sticky;
     display: flex;
+    flex-direction:row ;
+    justify-content: space-between;
+}
+.banner{
+    flex-grow: 2;
+    height: auto;
+    opacity: 50%;
+    border-radius: 0% 60% 60% 0%;
 }
 .login-text{
-    font-size:8em;
-    width: 40%;
+    align-self: center;
+    flex-grow: 1;
+    color: darkslategray;
+    font-size:6em;
 }
 .user{
     display: flex;
@@ -17,16 +31,17 @@ background-color: rgb(214, 183, 137);
     text-align: center;
     justify-content: center;
   }
-
-.user-type{
+.rider-option, .driver-option{
     padding: 50px;
     margin: 10px;
-    background-color: rgb(105, 0, 204);
+    background: rgb(103,96,223);
+    background: linear-gradient(90deg, rgba(103,96,223,1) 0%, rgba(74,132,199,1) 50%, rgba(111,242,222,1) 100%); 
     font-size: 3em;
     border-radius: 10%;
     margin: 3%;
 }
-a:hover, a:visited, a:default, a{
-    text-decoration: none;
-    color: tomato;
+
+.rider-option:hover, .driver-option:hover{
+    background: rgb(129,215,224);
+    background: linear-gradient(90deg, rgba(129,215,224,1) 0%, rgba(205,227,231,1) 50%, rgba(138,230,220,0.9570028695071778) 100%); 
 }
